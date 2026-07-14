@@ -87,7 +87,7 @@ After inserting the data, write queries to retrieve the first records from the f
 
 The complete SQL queries used for this experiment are available in the file:
 
-**solution.sql**
+📄 **[solution.sql](solution.sql)**
 
 ---
 
