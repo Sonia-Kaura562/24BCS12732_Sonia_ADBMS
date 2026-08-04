@@ -1,0 +1,28 @@
+-- 1. All orders with customer details
+SELECT c.customer_name,
+       o.order_id,
+       o.customer_id,
+       o.product_name,
+       o.order_date,
+       o.quantity
+FROM customers c
+INNER JOIN orders o
+ON c.customer_id = o.customer_id
+ORDER BY o.order_id;
+
+-- 2. Products and Categories
+SELECT p.product_name,
+       c.category_name
+FROM products p
+INNER JOIN categories c
+ON p.category_id = c.category_id
+ORDER BY p.product_id;
+
+-- 3. All category names with product details
+SELECT c.category_name,
+       p.product_name,
+       p.price
+FROM categories c
+LEFT JOIN products p
+ON c.category_id = p.category_id
+ORDER BY p.product_id;
