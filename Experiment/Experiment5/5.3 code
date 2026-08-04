@@ -1,3 +1,4 @@
+-- Simple IF Statement
 DO $$
 DECLARE
 VAL INT:=22;
@@ -10,6 +11,7 @@ BEGIN
 END;
 $$
 
+-- IF...ELSIF Example
 DO $$
 DECLARE
     AGE INT := 22;
